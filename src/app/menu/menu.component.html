@@ -1,0 +1,7 @@
+<div>
+  <ul class="list-group" *ngFor="let chapter of getBook()">
+    <li class="list-group-item" (click)="sendChapterInfo(chapter.info)">
+      {{ chapter.title }}
+    </li>
+  </ul>
+</div>
